@@ -33,7 +33,7 @@ export default class BoardModerator extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         <header className="jumbotron">
           <h3>{this.state.content}</h3>
         </header>

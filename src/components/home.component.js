@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-
+import Slider from "./slider.component";
+import Slidercard from "./cardcomponents"
 import UserService from "../services/user.service";
+
 
 export default class Home extends Component {
   constructor(props) {
@@ -31,11 +33,14 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="container">
-        <header className="jumbotron">
-          <h3>{this.state.content}</h3>
-        </header>
+      <div className="container-fluid">      
+      <Slider />     
+      
+    <Slidercard />   
+       
       </div>
+
+     
     );
   }
 }

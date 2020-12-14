@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import UserService from "../../services/user.service";
+import AdminMain from "./adminmain.component";
 
-import UserService from "../services/user.service";
 
 export default class BoardAdmin extends Component {
   constructor(props) {
@@ -34,9 +35,9 @@ export default class BoardAdmin extends Component {
   render() {
     return (
       <div className="container">
-        <header className="jumbotron">
-          <h3>{this.state.content}</h3>
-        </header>
+        
+       <AdminMain/>
+        
       </div>
     );
   }
